@@ -9,6 +9,7 @@
 
 <p align="center">
   <a href="#features"><strong>Features</strong></a> ·
+  <a href="#privacy-and-security"><strong>Privacy</strong></a> ·
   <a href="#running-locally"><strong>Running locally</strong></a>
 </p>
 <br/>
@@ -22,6 +23,10 @@
   - Styling with [Tailwind CSS](https://tailwindcss.com)
   - [Radix UI](https://radix-ui.com) for headless component primitives
   - Icons from [Phosphor Icons](https://phosphoricons.com)
+
+## Privacy and Security
+
+The website https://sha256.scoredetect.com/ does not collect any data from users. The website is hosted on [Vercel](https://vercel.com) and is served over HTTPS.
 
 ## Running locally
 
