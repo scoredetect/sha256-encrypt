@@ -19,7 +19,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
         </p>
         <p className="leading-normal text-muted-foreground">
           The code for this tool is available on{' '}
-          <ExternalLink href="https://github.com/scoredetect/sha256-encryption-tool.github.io">
+          <ExternalLink href="https://github.com/scoredetect/sha256-encrypt.vercel.app">
             GitHub
           </ExternalLink>
         </p>

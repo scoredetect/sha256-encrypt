@@ -1,4 +1,4 @@
-<a href="https://sha256-encryption-tool.github.io/">
+<a href="https://sha256-encrypt.vercel.app/">
   <img alt="Open-Source SHA256 Encryption Tool" src="./app/opengraph-image.png">
   <h1 align="center">Open-Source SHA256 Encryption Tool</h1>
 </a>
