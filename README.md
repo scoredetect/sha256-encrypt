@@ -1,5 +1,5 @@
 <a href="https://sha256-encrypt.vercel.app/">
-  <img alt="Open-Source SHA256 Encryption Tool" src="./app/opengraph-image.png">
+  <img alt="Open-Source SHA256 Encryption Tool" src="./app/readme-intro.png">
   <h1 align="center">Open-Source SHA256 Encryption Tool</h1>
 </a>
 
@@ -30,17 +30,22 @@ The website https://sha256.scoredetect.com/ does not collect any data from users
 
 ## Running locally
 
-First, clone the repository:
+1. First, clone the repository.
 
-```bash
-git clone
-```
+2. Install the `pnpm` command. See https://pnpm.io/installation for more information.
 
-Install the dependencies:
+3. Install the dependencies:
 
 ```bash
 pnpm install
+```
+
+4. Run the development server:
+
+```bash
 pnpm dev
 ```
+
+5. You can now visit [`localhost:3000`](http://localhost:3000) from your browser to see the app.
 
 Your app template should now be running on [localhost:3000](http://localhost:3000/).
