@@ -42,6 +42,12 @@ export function ChatPanel({
                 content: value,
                 role: 'user'
               })
+
+              // scroll to the bottom of the page
+              window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+              })
             }}
             input={input}
             setInput={setInput}
