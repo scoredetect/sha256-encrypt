@@ -20,6 +20,16 @@ export interface PromptProps
   isLoading: boolean
 }
 
+interface InputMessageEvent extends MessageEvent {
+  data: {
+    payload: {
+      content: string
+      type: string
+    }
+    source: string
+  }
+}
+
 export function PromptForm({
   onSubmit,
   input,
@@ -35,7 +45,7 @@ export function PromptForm({
     }
 
     // get message called 'message' from postMessage
-    const handleMessage = (event: MessageEvent) => {
+    const handleMessage = (event: InputMessageEvent) => {
       // check if the message payload contains the content
       if (!event.data?.payload?.content) {
         return
