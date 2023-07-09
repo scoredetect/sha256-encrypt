@@ -20,6 +20,16 @@ export interface PromptProps
   isLoading: boolean
 }
 
+interface InputMessageEvent extends MessageEvent {
+  data: {
+    payload: {
+      content: string
+      type: string
+    }
+    source: string
+  }
+}
+
 export function PromptForm({
   onSubmit,
   input,
@@ -33,7 +43,34 @@ export function PromptForm({
     if (inputRef.current) {
       inputRef.current.focus()
     }
-  }, [])
+
+    // get message called 'message' from postMessage
+    const handleMessage = (event: InputMessageEvent) => {
+      // check if the message payload contains the content
+      if (!event.data?.payload?.content) {
+        return
+      }
+
+      // check if the message payload contains the type as 'verify'
+      if (event.data?.payload?.type !== 'verify') {
+        return
+      }
+
+      const { payload } = event.data
+
+      setInput(payload.content)
+
+      // set timeout to at least 1ms to make sure the form is rendered
+      setTimeout(() => {
+        // submit the form
+        formRef.current?.dispatchEvent(
+          new Event('submit', { cancelable: true, bubbles: true })
+        )
+      }, 1)
+    }
+
+    globalThis.addEventListener('message', handleMessage)
+  }, [formRef, setInput])
 
   return (
     <form
