@@ -10,8 +10,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           Welcome to the SHA256 Tool!
         </h1>
         <p className="mb-2 leading-normal text-muted-foreground">
-          This is an open source tool built with{' '}
-          <ExternalLink href="https://www.openssl.org/">OpenSSL</ExternalLink>
+          This is an open source tool built with native browser Web APIs.
         </p>
         <p className="mb-2 leading-normal text-muted-foreground">
           You can input your content in the box below to generate a SHA256 hash

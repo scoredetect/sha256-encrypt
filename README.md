@@ -4,7 +4,7 @@
 </a>
 
 <p align="center">
-  Generate SHA256 hashes for any string using this open-source tool built with <a href="https://www.openssl.org/" target="_blank">OpenSSL</a>.
+  Generate SHA256 hashes for any string using this open-source tool built with native browser Web APIs.
 </p>
 
 <p align="center">

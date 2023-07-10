@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { cn } from '@/lib/utils'
-import { ExternalLink } from '@/components/external-link'
 
 export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
   return (
@@ -12,8 +11,7 @@ export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
       )}
       {...props}
     >
-      An Open Source Tool Built With{' '}
-      <ExternalLink href="https://www.openssl.org/">OpenSSL</ExternalLink>
+      An Open Source Tool Built With Native Browser Web APIs.
     </p>
   )
 }
